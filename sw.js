@@ -1,11 +1,24 @@
 self.addEventListener('push', function(event) {
-  const text = event.data ? event.data.text() : 'Deschide pentru a vedea citatul!';
+  let title = 'Citatul Momentului';
+  let bodyText = 'Deschide pentru a vedea citatul!';
+
+  if (event.data) {
+    try {
+      const dataJSON = event.data.json();
+      title = dataJSON.title || title;
+      bodyText = dataJSON.body || bodyText;
+    } catch (e) {
+      // Fallback în cazul în care primește text simplu
+      bodyText = event.data.text();
+    }
+  }
+
   const options = {
-    body: text,
+    body: bodyText,
     icon: 'https://via.placeholder.com/192/000000/FFFFFF?text=C',
     vibrate: [200, 100, 200]
   };
-  event.waitUntil(self.registration.showNotification('Citatul Momentului', options));
+  event.waitUntil(self.registration.showNotification(title, options));
 });
 
 self.addEventListener('notificationclick', function(event) {
