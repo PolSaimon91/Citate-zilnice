@@ -1,0 +1,47 @@
+name: Trimite Notificari
+
+on:
+  schedule:
+    # Rulează în fiecare oră, la fix.
+    # Scriptul va decide dacă ora din România e 8, 11, 14, 17 sau 20.
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Bifează pentru trimitere de TEST (ignoră ora)'
+        type: boolean
+        required: true
+        default: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Descarcă fișierele
+        uses: actions/checkout@v4
+
+      - name: Pregătește serverul
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalează modulele
+        run: npm install
+
+      - name: Rulează scriptul de notificări
+        env:
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          WEB_PUSH_SUBSCRIPTION: ${{ secrets.WEB_PUSH_SUBSCRIPTION }}
+          IS_TEST: ${{ github.event.inputs.test_mode }}
+        run: node scripts/send-notification.js
+
+      - name: Salvează istoricul citatelor
+        if: ${{ github.event.inputs.test_mode != 'true' }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add history.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update istoric citate [skip ci]" && git push)
