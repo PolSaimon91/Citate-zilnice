@@ -1,27 +1,252 @@
 [
-  { "id": "q1", "quote": "The only way to do great work is to love what you do.", "author": "Steve Jobs" },
-  { "id": "q2", "quote": "It always seems impossible until it's done.", "author": "Nelson Mandela" },
-  { "id": "q3", "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill" },
-  { "id": "q4", "quote": "All our dreams can come true, if we have the courage to pursue them.", "author": "Walt Disney" },
-  { "id": "q5", "quote": "The future belongs to those who believe in the beauty of their dreams.", "author": "Eleanor Roosevelt" },
-  { "id": "q6", "quote": "Imagination is more important than knowledge.", "author": "Albert Einstein" },
-  { "id": "q7", "quote": "Whether you think you can or you think you can't, you're right.", "author": "Henry Ford" },
-  { "id": "q8", "quote": "Be the change that you wish to see in the world.", "author": "Mahatma Gandhi" },
-  { "id": "q9", "quote": "Darkness cannot drive out darkness: only light can do that.", "author": "Martin Luther King Jr." },
-  { "id": "q10", "quote": "The happiness of your life depends upon the quality of your thoughts.", "author": "Marcus Aurelius" },
-  { "id": "q11", "quote": "It is not that we have a short time to live, but that we waste a lot of it.", "author": "Seneca" },
-  { "id": "q12", "quote": "It's not what happens to you, but how you react to it that matters.", "author": "Epictetus" },
-  { "id": "q13", "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", "author": "Aristotle" },
-  { "id": "q14", "quote": "The unexamined life is not worth living.", "author": "Socrates" },
-  { "id": "q15", "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.", "author": "Ralph Waldo Emerson" },
-  { "id": "q16", "quote": "Believe you can and you're halfway there.", "author": "Theodore Roosevelt" },
-  { "id": "q17", "quote": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.", "author": "Maya Angelou" },
-  { "id": "q18", "quote": "It's not whether you get knocked down, it's whether you get up.", "author": "Vince Lombardi" },
-  { "id": "q19", "quote": "Absorb what is useful, discard what is not, add what is uniquely your own.", "author": "Bruce Lee" },
-  { "id": "q20", "quote": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius" },
-  { "id": "q21", "quote": "The secret of getting ahead is getting started.", "author": "Mark Twain" },
-  { "id": "q22", "quote": "Whatever you are, be a good one.", "author": "Abraham Lincoln" },
-  { "id": "q23", "quote": "I have not failed. I've just found 10,000 ways that won't work.", "author": "Thomas Edison" },
-  { "id": "q24", "quote": "Alone we can do so little; together we can do so much.", "author": "Helen Keller" },
-  { "id": "q25", "quote": "Things turn out best for the people who make the best of the way things turn out.", "author": "John Wooden" }
+  {
+    "id": 1,
+    "quote": "Whether you think you can, or you think you can't – you're right.",
+    "author": "Henry Ford"
+  },
+  {
+    "id": 2,
+    "quote": "The impediment to action advances action. What stands in the way becomes the way.",
+    "author": "Marcus Aurelius"
+  },
+  {
+    "id": 3,
+    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas A. Edison"
+  },
+  {
+    "id": 4,
+    "quote": "It is not that I'm so smart, it's just that I stay with problems longer.",
+    "author": "Albert Einstein"
+  },
+  {
+    "id": 5,
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill"
+  },
+  {
+    "id": 6,
+    "quote": "We suffer more often in imagination than in reality.",
+    "author": "Seneca"
+  },
+  {
+    "id": 7,
+    "quote": "You have power over your mind - not outside events. Realize this, and you will find strength.",
+    "author": "Marcus Aurelius"
+  },
+  {
+    "id": 8,
+    "quote": "I am not a product of my circumstances. I am a product of my decisions.",
+    "author": "Stephen Covey"
+  },
+  {
+    "id": 9,
+    "quote": "Everything you've ever wanted is on the other side of fear.",
+    "author": "George Addair"
+  },
+  {
+    "id": 10,
+    "quote": "In the middle of every difficulty lies opportunity.",
+    "author": "Albert Einstein"
+  },
+  {
+    "id": 11,
+    "quote": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius"
+  },
+  {
+    "id": 12,
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James"
+  },
+  {
+    "id": 13,
+    "quote": "If you are going through hell, keep going.",
+    "author": "Winston Churchill"
+  },
+  {
+    "id": 14,
+    "quote": "First say to yourself what you would be; and then do what you have to do.",
+    "author": "Epictetus"
+  },
+  {
+    "id": 15,
+    "quote": "He who has a why to live for can bear almost any how.",
+    "author": "Friedrich Nietzsche"
+  },
+  {
+    "id": 16,
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle"
+  },
+  {
+    "id": 17,
+    "quote": "Growth and comfort do not coexist.",
+    "author": "Ginni Rometty"
+  },
+  {
+    "id": 18,
+    "quote": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela"
+  },
+  {
+    "id": 19,
+    "quote": "You don't have to be great to start, but you have to start to be great.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "id": 20,
+    "quote": "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.",
+    "author": "Jimmy Dean"
+  },
+  {
+    "id": 21,
+    "quote": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt"
+  },
+  {
+    "id": 22,
+    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt"
+  },
+  {
+    "id": 23,
+    "quote": "Hardships often prepare ordinary people for an extraordinary destiny.",
+    "author": "C.S. Lewis"
+  },
+  {
+    "id": 24,
+    "quote": "Do not judge me by my successes, judge me by how many times I fell down and got back up again.",
+    "author": "Nelson Mandela"
+  },
+  {
+    "id": 25,
+    "quote": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson"
+  },
+  {
+    "id": 26,
+    "quote": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky"
+  },
+  {
+    "id": 27,
+    "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "id": 28,
+    "quote": "Doubt kills more dreams than failure ever will.",
+    "author": "Suzy Kassem"
+  },
+  {
+    "id": 29,
+    "quote": "Fall seven times and stand up eight.",
+    "author": "Japanese Proverb"
+  },
+  {
+    "id": 30,
+    "quote": "A person who never made a mistake never tried anything new.",
+    "author": "Albert Einstein"
+  },
+  {
+    "id": 31,
+    "quote": "Courage doesn't always roar. Sometimes courage is the quiet voice at the end of the day saying, 'I will try again tomorrow.'",
+    "author": "Mary Anne Radmacher"
+  },
+  {
+    "id": 32,
+    "quote": "Knowing is not enough; we must apply. Wishing is not enough; we must do.",
+    "author": "Johann Wolfgang von Goethe"
+  },
+  {
+    "id": 33,
+    "quote": "If you want to fly, you have to give up the things that weigh you down.",
+    "author": "Toni Morrison"
+  },
+  {
+    "id": 34,
+    "quote": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "id": 35,
+    "quote": "Opportunities don't happen, you create them.",
+    "author": "Chris Grosser"
+  },
+  {
+    "id": 36,
+    "quote": "I find that the harder I work, the more luck I seem to have.",
+    "author": "Thomas Jefferson"
+  },
+  {
+    "id": 37,
+    "quote": "Nothing is impossible, the word itself says, 'I'm possible!'",
+    "author": "Audrey Hepburn"
+  },
+  {
+    "id": 38,
+    "quote": "Definiteness of purpose is the starting point of all achievement.",
+    "author": "W. Clement Stone"
+  },
+  {
+    "id": 39,
+    "quote": "You must be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "id": 40,
+    "quote": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+    "author": "Christian D. Larson"
+  },
+  {
+    "id": 41,
+    "quote": "It is never too late to be what you might have been.",
+    "author": "George Eliot"
+  },
+  {
+    "id": 42,
+    "quote": "Out of clutter, find simplicity. From discord, find harmony. In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein"
+  },
+  {
+    "id": 43,
+    "quote": "To see what is right and not do it is a lack of courage.",
+    "author": "Confucius"
+  },
+  {
+    "id": 44,
+    "quote": "No matter how much falls on us, we keep plowing ahead. That's the only way to keep the roads clear.",
+    "author": "Greg Kincaid"
+  },
+  {
+    "id": 45,
+    "quote": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+    "author": "Roy T. Bennett"
+  },
+  {
+    "id": 46,
+    "quote": "The man who moves a mountain begins by carrying away small stones.",
+    "author": "Confucius"
+  },
+  {
+    "id": 47,
+    "quote": "I attribute my success to this: I never gave or took any excuse.",
+    "author": "Florence Nightingale"
+  },
+  {
+    "id": 48,
+    "quote": "The most difficult thing is the decision to act, the rest is merely tenacity.",
+    "author": "Amelia Earhart"
+  },
+  {
+    "id": 49,
+    "quote": "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.",
+    "author": "Mark Twain"
+  },
+  {
+    "id": 50,
+    "quote": "Make each day your masterpiece.",
+    "author": "John Wooden"
+  }
 ]
