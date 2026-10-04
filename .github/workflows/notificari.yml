@@ -31,13 +31,16 @@ jobs:
       - name: Instalează modulele
         run: npm install
 
-      - name: Rulează scriptul de notificări
+      - name: Rulează scriptul de notificări (Cautare Automata)
         env:
           VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           WEB_PUSH_SUBSCRIPTION: ${{ secrets.WEB_PUSH_SUBSCRIPTION }}
           IS_TEST: ${{ github.event_name == 'push' || github.event.inputs.test_mode == 'true' }}
-        run: node scripts/send-notification.js
+        run: |
+          SCRIPT_PATH=$(find . -name "send-notification*" | head -n 1)
+          echo "Fișier găsit exact la calea: $SCRIPT_PATH"
+          node "$SCRIPT_PATH"
 
       - name: Salvează istoricul citatelor
         if: ${{ github.event_name != 'push' && github.event.inputs.test_mode != 'true' }}
