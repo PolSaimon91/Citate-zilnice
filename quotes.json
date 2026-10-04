@@ -2006,7 +2006,259 @@
     "quote": "Your life is an expression of all your thoughts.",
     "author": "Marcus Aurelius"
   }
+,
+  {
+    "id": 401,
+    "quote": "If you change the way you look at things, the things you look at change.",
+    "author": "Wayne Dyer"
+  },
+  {
+    "id": 402,
+    "quote": "You can never leave footprints that last if you are always walking on tiptoe.",
+    "author": "Leymah Gbowee"
+  },
+  {
+    "id": 403,
+    "quote": "There is only one way to avoid criticism: do nothing, say nothing, and be nothing.",
+    "author": "Aristotle"
+  },
+  {
+    "id": 404,
+    "quote": "The most difficult thing is the decision to act, the rest is merely tenacity.",
+    "author": "Amelia Earhart"
+  },
+  {
+    "id": 405,
+    "quote": "If you look at what you have in life, you'll always have more. If you look at what you don't have, you'll never have enough.",
+    "author": "Oprah Winfrey"
+  },
+  {
+    "id": 406,
+    "quote": "Remember that not getting what you want is sometimes a wonderful stroke of luck.",
+    "author": "Dalai Lama"
+  },
+  {
+    "id": 407,
+    "quote": "When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.",
+    "author": "Henry Ford"
+  },
+  {
+    "id": 408,
+    "quote": "The most common way people give up their power is by thinking they don't have any.",
+    "author": "Alice Walker"
+  },
+  {
+    "id": 409,
+    "quote": "Winning isn't everything, but wanting to win is.",
+    "author": "Vince Lombardi"
+  },
+  {
+    "id": 410,
+    "quote": "I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+    "author": "Mother Teresa"
+  },
+  {
+    "id": 411,
+    "quote": "Certain things catch your eye, but pursue only those that capture the heart.",
+    "author": "Ancient Indian Proverb"
+  },
+  {
+    "id": 412,
+    "quote": "When I let go of what I am, I become what I might be.",
+    "author": "Lao Tzu"
+  },
+  {
+    "id": 413,
+    "quote": "There are no traffic jams along the extra mile.",
+    "author": "Roger Staubach"
+  },
+  {
+    "id": 414,
+    "quote": "You become what you believe.",
+    "author": "Oprah Winfrey"
+  },
+  {
+    "id": 415,
+    "quote": "Opportunities don't happen. You create them.",
+    "author": "Chris Grosser"
+  },
+  {
+    "id": 416,
+    "quote": "Just when the caterpillar thought the world was ending, he turned into a butterfly.",
+    "author": "Proverb"
+  },
+  {
+    "id": 417,
+    "quote": "Successful entrepreneurs are givers and not takers of positive energy.",
+    "author": "Anonymous"
+  },
+  {
+    "id": 418,
+    "quote": "Only put off until tomorrow what you are willing to die having left undone.",
+    "author": "Pablo Picasso"
+  },
+  {
+    "id": 419,
+    "quote": "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
+    "author": "Marie Curie"
+  },
+  {
+    "id": 420,
+    "quote": "You can't fall if you don't climb. But there's no joy in living your whole life on the ground.",
+    "author": "Unknown"
+  },
+  {
+    "id": 421,
+    "quote": "We must be willing to let go of the life we planned so as to have the life that is waiting for us.",
+    "author": "Joseph Campbell"
+  },
+  {
+    "id": 422,
+    "quote": "What great thing would you attempt if you knew you could not fail?",
+    "author": "Robert H. Schuller"
+  },
+  {
+    "id": 423,
+    "quote": "Life is what happens to you while you're busy making other plans.",
+    "author": "John Lennon"
+  },
+  {
+    "id": 424,
+    "quote": "Do what you feel in your heart to be right – for you'll be criticized anyway.",
+    "author": "Eleanor Roosevelt"
+  },
+  {
+    "id": 425,
+    "quote": "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.",
+    "author": "Steve Jobs"
+  },
+  {
+    "id": 426,
+    "quote": "Life shrinks or expands in proportion to one's courage.",
+    "author": "Anais Nin"
+  },
+  {
+    "id": 427,
+    "quote": "If you hear a voice within you say 'you cannot paint,' then by all means paint and that voice will be silenced.",
+    "author": "Vincent Van Gogh"
+  },
+  {
+    "id": 428,
+    "quote": "There is only one way to succeed in anything, and that is to give it everything.",
+    "author": "Vince Lombardi"
+  },
+  {
+    "id": 429,
+    "quote": "Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.",
+    "author": "Jesus"
+  },
+  {
+    "id": 430,
+    "quote": "The successful man will profit from his mistakes and try again in a different way.",
+    "author": "Dale Carnegie"
+  },
+  {
+    "id": 431,
+    "quote": "A successful person is one who can lay a firm foundation with the bricks that others throw at him.",
+    "author": "David Brinkley"
+  },
+  {
+    "id": 432,
+    "quote": "To be successful, you must accept all challenges that come your way. You can't just accept the ones you like.",
+    "author": "Mike Gafka"
+  },
+  {
+    "id": 433,
+    "quote": "Be the change that you wish to see in the world.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "id": 434,
+    "quote": "You only live once, but if you do it right, once is enough.",
+    "author": "Mae West"
+  },
+  {
+    "id": 435,
+    "quote": "A man is but the product of his thoughts. What he thinks, he becomes.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "id": 436,
+    "quote": "The mind is its own place, and in itself can make a heaven of hell, a hell of heaven.",
+    "author": "John Milton"
+  },
+  {
+    "id": 437,
+    "quote": "You build on failure. You use it as a stepping stone. Close the door on the past. You don't try to forget the mistakes, but you don't dwell on it.",
+    "author": "Johnny Cash"
+  },
+  {
+    "id": 438,
+    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
+    "author": "Maya Angelou"
+  },
+  {
+    "id": 439,
+    "quote": "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible.",
+    "author": "Francis of Assisi"
+  },
+  {
+    "id": 440,
+    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas A. Edison"
+  },
+  {
+    "id": 441,
+    "quote": "Always make a total effort, even when the odds are against you.",
+    "author": "Arnold Palmer"
+  },
+  {
+    "id": 442,
+    "quote": "You can't let your failures define you. You have to let your failures teach you.",
+    "author": "Barack Obama"
+  },
+  {
+    "id": 443,
+    "quote": "To live is the rarest thing in the world. Most people exist, that is all.",
+    "author": "Oscar Wilde"
+  },
+  {
+    "id": 444,
+    "quote": "Turn your wounds into wisdom.",
+    "author": "Oprah Winfrey"
+  },
+  {
+    "id": 445,
+    "quote": "What we think, we become.",
+    "author": "Buddha"
+  },
+  {
+    "id": 446,
+    "quote": "If you judge people, you have no time to love them.",
+    "author": "Mother Teresa"
+  },
+  {
+    "id": 447,
+    "quote": "The two most important days in your life are the day you are born and the day you find out why.",
+    "author": "Mark Twain"
+  },
+  {
+    "id": 448,
+    "quote": "In three words I can sum up everything I've learned about life: it goes on.",
+    "author": "Robert Frost"
+  },
+  {
+    "id": 449,
+    "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "id": 450,
+    "quote": "Do not let making a living prevent you from making a life.",
+    "author": "John Wooden"
+  }
 ]
+
 
 
 
