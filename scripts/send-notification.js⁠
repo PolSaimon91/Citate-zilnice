@@ -1,16 +1,10 @@
 const fs = require('fs');
 
 async function sendTelegramQuote() {
-    const token = (process.env.MY_TELEGRAM_TOKEN || '').trim();
+    const token = "8978330420:AAHj7RnEimxYFfilR9ZBX1A8H2LqnMVgPYY";
     const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
-    console.log("Token lungime:", token.length);
-    console.log("Valoare Chat ID primită:", `"${chatId}"`);
-
-    if (!token || !chatId) {
-        console.error("Lipsește tokenul sau chat ID-ul din mediul de execuție!");
-        process.exit(1);
-    }
+    console.log("Token direct hardcodat, lungime:", token.length);
 
     const quotesData = JSON.parse(fs.readFileSync('quotes.json', 'utf8'));
     const totalQuotes = quotesData.length;
