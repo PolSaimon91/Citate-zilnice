@@ -1,4 +1,4 @@
-Name: Trimite Notificari
+name: Trimite Notificari
 
 on:
   push:
