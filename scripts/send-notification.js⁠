@@ -5,7 +5,7 @@ async function sendTelegramQuote() {
     const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
     console.log("Token lungime:", token.length);
-    console.log("Chat ID lungime:", chatId.length);
+    console.log("Valoare Chat ID primită:", `"${chatId}"`);
 
     if (!token || !chatId) {
         console.error("Lipsește tokenul sau chat ID-ul din mediul de execuție!");
