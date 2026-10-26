@@ -1,11 +1,11 @@
 const fs = require('fs');
 
 async function sendTelegramQuote() {
-    // Curățăm automat orice spațiu sau Enter accidental cu .trim()
-    const token = (process.env.MY_TELEGRAM_TOKEN || process.env.TELEGRAM_BOT_TOKEN || '').trim();
+    // Folosim tokenul direct pentru a elimina orice eroare de secret din GitHub
+    const token = "8978330420:AAFU0eI0LIipJbY5DuK-VzT-Fa-I83TFLk";
     const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
-    console.log("Token curățat primit:", token ? token.substring(0, 5) + "..." : "LIPSEȘTE");
+    console.log("Token setat direct, lungime:", token.length);
     console.log("Chat ID curățat primit:", chatId ? "OK" : "LIPSEȘTE");
 
     if (!token || !chatId) {
