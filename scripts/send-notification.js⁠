@@ -1,11 +1,10 @@
 const fs = require('fs');
 
 async function sendTelegramQuote() {
-    // Folosim tokenul direct pentru a elimina orice eroare de secret din GitHub
-    const token = "8978330420:AAFU0eI0LIipJbY5DuK-VzT-Fa-I83TFLk";
+    const token = (process.env.MY_TELEGRAM_TOKEN || '').trim();
     const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
-    console.log("Token setat direct, lungime:", token.length);
+    console.log("Token curățat primit, lungime:", token.length);
     console.log("Chat ID curățat primit:", chatId ? "OK" : "LIPSEȘTE");
 
     if (!token || !chatId) {
