@@ -14,6 +14,7 @@ async function sendTelegramQuote() {
     const message = `✨ *Citatul Zilei*\n\n> "${selected.quote}"\n\n— *${selected.author}*`;
 
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
+    console.log("URL final apelat:", url);
     
     try {
         const response = await fetch(url, {
