@@ -1,15 +1,15 @@
 const fs = require('fs');
 
 async function sendTelegramQuote() {
-    const token = process.env.MY_TELEGRAM_TOKEN || process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
+    // Curățăm automat orice spațiu sau Enter accidental cu .trim()
+    const token = (process.env.MY_TELEGRAM_TOKEN || process.env.TELEGRAM_BOT_TOKEN || '').trim();
+    const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
-    // Afișăm tokenul complet ca să vedem exact ce citește din secrete
-    console.log("Token complet primit:", JSON.stringify(token));
-    console.log("Chat ID primit:", JSON.stringify(chatId));
+    console.log("Token curățat primit:", token ? token.substring(0, 5) + "..." : "LIPSEȘTE");
+    console.log("Chat ID curățat primit:", chatId ? "OK" : "LIPSEȘTE");
 
     if (!token || !chatId) {
-        console.error("Lipsește MY_TELEGRAM_TOKEN sau TELEGRAM_CHAT_ID!");
+        console.error("Lipsește tokenul sau chat ID-ul!");
         process.exit(1);
     }
 
