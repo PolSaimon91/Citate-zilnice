@@ -1,10 +1,10 @@
 const fs = require('fs');
 
 async function sendTelegramQuote() {
-    const token = "8978330420:AAHj7RnEimxYFfilR9ZBX1A8H2LqnMVgPYY";
+    const token = "8842122916:AAG5Z_7eqrGB_nl0yWTDQUXprW0zFf4I2Nk";
     const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
-    console.log("Token direct hardcodat, lungime:", token.length);
+    console.log("Token nou hardcodat, lungime:", token.length);
 
     const quotesData = JSON.parse(fs.readFileSync('quotes.json', 'utf8'));
     const totalQuotes = quotesData.length;
@@ -14,7 +14,6 @@ async function sendTelegramQuote() {
     const message = `✨ *Citatul Zilei*\n\n> "${selected.quote}"\n\n— *${selected.author}*`;
 
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
-    console.log("URL final apelat:", url);
     
     try {
         const response = await fetch(url, {
