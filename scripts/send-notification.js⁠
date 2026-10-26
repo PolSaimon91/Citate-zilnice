@@ -4,11 +4,11 @@ async function sendTelegramQuote() {
     const token = (process.env.MY_TELEGRAM_TOKEN || '').trim();
     const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
-    console.log("Token curățat primit, lungime:", token.length);
-    console.log("Chat ID curățat primit:", chatId ? "OK" : "LIPSEȘTE");
+    console.log("Token lungime:", token.length);
+    console.log("Chat ID lungime:", chatId.length);
 
     if (!token || !chatId) {
-        console.error("Lipsește tokenul sau chat ID-ul!");
+        console.error("Lipsește tokenul sau chat ID-ul din mediul de execuție!");
         process.exit(1);
     }
 
