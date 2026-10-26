@@ -1,30 +1,25 @@
 const fs = require('fs');
 
 async function sendTelegramQuote() {
-    // 1. Preluăm datele secrete din mediul GitHub Actions
-    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const token = process.env.MY_TELEGRAM_TOKEN || process.env.TELEGRAM_BOT_TOKEN;
     const chatId = process.env.TELEGRAM_CHAT_ID;
 
-    // Linie de control pentru a vedea în loguri dacă tokenul este citit corect
-    console.log("Token primit:", token ? token.substring(0, 5) + "..." : "LIPSEȘTE");
+    // Afișăm tokenul complet ca să vedem exact ce citește din secrete
+    console.log("Token complet primit:", JSON.stringify(token));
+    console.log("Chat ID primit:", JSON.stringify(chatId));
 
     if (!token || !chatId) {
-        console.error("Lipsește TELEGRAM_BOT_TOKEN sau TELEGRAM_CHAT_ID!");
+        console.error("Lipsește MY_TELEGRAM_TOKEN sau TELEGRAM_CHAT_ID!");
         process.exit(1);
     }
 
-    // 2. Citim baza de date cu citate
     const quotesData = JSON.parse(fs.readFileSync('quotes.json', 'utf8'));
-    
-    // Folosim o logică simplă bazată pe un index aleatoriu
     const totalQuotes = quotesData.length;
     const randomIndex = Math.floor(Math.random() * totalQuotes);
     const selected = quotesData[randomIndex];
 
-    // 3. Formatăm mesajul pentru Telegram
     const message = `✨ *Citatul Zilei*\n\n> "${selected.quote}"\n\n— *${selected.author}*`;
 
-    // 4. Trimitem mesajul prin API-ul oficial Telegram
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
     
     try {
