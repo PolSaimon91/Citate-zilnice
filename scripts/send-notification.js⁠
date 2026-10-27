@@ -1,10 +1,9 @@
 const fs = require('fs');
 
 async function sendTelegramQuote() {
-    const token = "8842122916:AAG5Z_7eqrGB_nl0yWTDQUXprW0zFf4I2Nk";
-    const chatId = (process.env.TELEGRAM_CHAT_ID || '').trim();
-
-    console.log("Token nou hardcodat, lungime:", token.length);
+    // Tokenul corectat cu litera O mare (WOzFf4I2Nk) si Chat ID-ul tau direct
+    const token = "8842122916:AAG5Z_7eqrGB_nl0yWTDQUXprWOzFf4I2Nk".trim();
+    const chatId = "7037560362".trim();
 
     const quotesData = JSON.parse(fs.readFileSync('quotes.json', 'utf8'));
     const totalQuotes = quotesData.length;
