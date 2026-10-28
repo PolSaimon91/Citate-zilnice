@@ -2,9 +2,7 @@ name: Trimite Notificari
 
 on:
   schedule:
-    # Ruleaza la 07:00, 10:00, 13:00, 16:00 si 19:00 UTC
-    # Adica exact la 09:00, 12:00, 15:00, 18:00 si 21:00 (ora Romaniei)
-    - cron: '0 7,10,13,16,19 * * *'
+    - cron: '5 7,10,13,16,19 * * *'
   workflow_dispatch:
 
 jobs:
