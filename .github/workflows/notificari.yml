@@ -1,8 +1,6 @@
 name: Trimite Notificari
 
 on:
-  schedule:
-    - cron: '5 7,10,13,16,19 * * *'
   workflow_dispatch:
 
 jobs:
